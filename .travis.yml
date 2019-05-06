@@ -1,0 +1,21 @@
+dist: xenial
+sudo: required
+
+language: elixir
+elixir:
+- 1.7.4
+otp_release:
+- 21.2
+
+install:
+- mix local.rebar --force
+- mix local.hex --force
+- mix deps.get
+
+script:
+- docker --version
+- docker build --file Dockerfile .
+
+notifications:
+  email:
+    - gergo.papp-szentannai@ni.com
