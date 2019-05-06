@@ -9,8 +9,7 @@ otp_release:
 
 env:
   global:
-    - HEX_HTTP_CONCURRENCY=1
-    - HEX_HTTP_TIMEOUT=120
+    - HEX_UNSAFE_HTTPS true
 
 before_install:
 - sudo sysctl net.ipv6.conf.all.disable_ipv6=1
