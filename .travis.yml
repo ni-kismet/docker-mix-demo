@@ -3,9 +3,9 @@ sudo: required
 
 language: elixir
 elixir:
-- 1.7.4
+- 1.8.1
 otp_release:
-- 21.2
+- 21.3
 
 env:
   - HEX_HTTP_CONCURRENCY=1
