@@ -8,8 +8,6 @@ RUN echo "ENVIRONMENT: "${MIX_ENV}
 WORKDIR /usr/src/docker-mix-demo
 
 COPY . .
-RUN mix hex.config http_concurrency 1
-RUN mix hex.config http_timeout 120
 RUN mix local.rebar --force
 RUN mix local.hex --force
 RUN mix deps.get
