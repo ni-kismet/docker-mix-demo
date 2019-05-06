@@ -11,11 +11,7 @@ ENV HEX_HTTP_TIMEOUT=120
 WORKDIR /usr/src/docker-mix-demo
 
 COPY . .
-RUN mix local.rebar --force
-RUN mix local.hex --force
-RUN mix deps.get
-
-RUN mix release --env=${MIX_ENV}
+COPY ./_build/${MIX_ENV}/rel/demo /usr/src/dataservices/_build/${MIX_ENV}/rel/demo
 
 # Run container
 FROM elixir:1.8.1

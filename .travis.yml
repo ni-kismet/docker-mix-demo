@@ -23,6 +23,7 @@ install:
 - mix deps.get
 
 script:
+- MIX_ENV=prod mix release --env=prod
 - docker --version
 - docker build --file Dockerfile .
 
