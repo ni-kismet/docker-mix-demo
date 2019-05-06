@@ -8,8 +8,9 @@ otp_release:
 - 21.3
 
 env:
-  - HEX_HTTP_CONCURRENCY=1
-  - HEX_HTTP_TIMEOUT=120
+  global:
+    - HEX_HTTP_CONCURRENCY=1
+    - HEX_HTTP_TIMEOUT=120
 
 install:
 - mix local.rebar --force
