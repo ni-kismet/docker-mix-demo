@@ -28,8 +28,7 @@ defmodule Demo.MixProject do
       {:ecto, "~> 3.0"},
       {:hammer, "~> 6.0"},
       {:distillery, "~> 2.0"},
-      {:mongodb, "~> 0.0"},
-      {:params, git: "git@github.com:vic/params.git"}
+      {:mongodb, "~> 0.0"}
     ]
   end
 end
