@@ -28,7 +28,12 @@ defmodule Demo.MixProject do
       {:ecto, "~> 3.0"},
       {:hammer, "~> 6.0"},
       {:distillery, "~> 2.0"},
-      {:mongodb, "~> 0.0"}
+      {:mongodb, "~> 0.0"},
+      {:parse_trans, "~> 3.0"},
+      {:mime, "~> 1.0"},
+      {:bypass, "~> 1.0", only: :test},
+      {:ex_aws, "~> 2.0"},
+      {:ex_aws_s3, "~> 2.0"}
     ]
   end
 end
